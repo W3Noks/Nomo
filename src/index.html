@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="..\node_modules\materialize-css\dist\css\materialize.min.css">
+        <link rel="stylesheet" href="index.css">
+        <script src="..\node_modules\materialize-css\dist\js\materialize.min.js"></script>
+        <title>Nomo</title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div id="draggable" class="nav-wrapper color rose-- dark"></div>
+            <div class="nav-wrapper color rose-- light">
+                <span class="brand-logo color rose-- light tooltipped" data-position="bottom" data-tooltip="Cliquez pour quitter">Nomo</span>
+                <ul class="right hide-on-small-only">
+                    <li><i id="search-button" class="material-icons left" style="font-size:3rem">search</i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="search-bar" class="hide" type="text" placeholder="Rechercher">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <ul id="creation-section" class="collapsible">
+                    <li id="creator">
+                        <div class="collapsible-header">
+                            <a class="left btn-floating btn-large waves-effect waves-light color rose-- light"><i class="right material-icons">add</i></a>
+                            <div class="input-field col s12">
+                                <input id="title" class="nh-input" type="text">
+                                <label for="title"> Entrez le titre </label>
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <blockquote class="color rose-- light">
+                                <div class="input-field">
+                                    <textarea id="content" class="materialize-textarea nh-input" type="text"></textarea>
+                                    <label for="content"> Entrez la description </label>
+                                </div>
+                            </blockquote>
+                            <a id="send-button" class="waves-effect waves-light btn-small color rose-- light"><i class="material-icons right">send</i>Envoyer</a>
+                            <a id="help-button" class="waves-effect waves-light btn-small color rose-- light"><i class="material-icons right">help</i>Afficher l'aide</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="reminders-section" class="collapsible">
+                </ul>
+            </div>
+        </div>
+        <div id="modal-box" class="modal">
+            <div class="modal-content">
+                <h4 id="modal-header" >Erreur</h4>
+                <p id="modal-paragraph" >Erreur</p>
+            </div>
+            <div class="modal-footer">
+                <a id="modal-yes" class="modal-close waves-effect waves-green btn-flat">Oui</a>
+                <a id="modal-no" class="modal-close waves-effect waves-red btn-flat">Non</a>
+            </div>
+        </div>
+        <div id="help-modal-box" class="modal">
+            <div class="modal-content">
+                <h3 class="nh-title">Section d'assistance</h3>
+                <div class="divider"></div>
+                <ul id="help-section" class="collapsible"></ul>
+            </div>
+            <div class="modal-footer">
+                <a id="modal-thanks" class="modal-close waves-effect waves-green btn-flat">Merci</a>
+            </div>
+        </div>
+    </body>
+</html>

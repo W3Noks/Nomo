@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/materialize-icons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #262626;
+}
+
+#search-button:hover {
+    cursor: pointer;
+}
+
+.nav-wrapper#draggable {
+    -webkit-app-region: drag;
+    height: 10px;
+}
+
+.nav-wrapper#draggable:hover {
+    cursor: -webkit-grab !important;
+}
+
+.brand-logo:hover {
+    text-align: center;
+    font-family: 'Material Icons';
+    font-size: 4rem;
+    width: 200px;
+}
+
+.nh-title {
+    text-transform: uppercase;
+}
+
+.nh-list {
+    list-style: square inside url('../assets/icons/png/heart.png');
+    margin-left: 2px;
+}
+
+input:focus:not([readonly])+label,
+textarea:focus:not([readonly])+label {
+    color: #FF0057 !important;
+}
+
+input:not(.nh-input),
+textarea {
+    color: white;
+}
+
+input:focus:not([readonly]),
+textarea:focus:not([readonly]) {
+    border-bottom: solid 1px #FF0057 !important;
+    box-shadow: 0 1px 0 0 #FF0057 !important;
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+@keyframes brand-logo-start-rose {
+    0% {
+        color: #FF0057;
+    }
+    100% {
+        color: white;
+    }
+}
+@keyframes brand-logo-start-green {
+    0% {
+        color: rgb(44, 189, 1);
+    }
+    100% {
+        color: white;
+    }
+}
+@keyframes brand-logo-start-blue {
+    0% {
+        color: rgb(1, 81, 230);
+    }
+    100% {
+        color: white;
+    }
+}
+
+/* Rose */
+
+.brand-logo.rose--.light {
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: bold;
+    animation: brand-logo-start-rose 5s alternate;
+    transition: font-size 0.2s;
+}
+
+#help-modal-box blockquote.rose--.light {
+    color: black;
+}
+
+blockquote.rose--.light {
+    color: white;
+    border-left: solid 3px #FF0057;
+    background: transparent;
+}
+
+.rose--.dark {
+    background: rgb(163, 1, 55);
+}
+
+.rose--.light {
+    background: #FF0057;
+}
+
+.btn-small.rose--.light:hover {
+    background: transparent;
+    border: solid 1px #FF0057;
+    color: #FF0057;
+    font-weight: bold;
+}
+.btn-small.rose--.dark:hover {
+    background: transparent;
+    border: solid 1px rgb(163, 1, 55);
+    color: rgb(163, 1, 55);
+    font-weight: bold;
+}
+
+
+/* Green */
+
+.brand-logo.green--.light {
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: bold;
+    animation: brand-logo-start-green 5s alternate;
+    transition: font-size 0.2s;
+}
+
+#help-modal-box blockquote.green--.light {
+    color: black;
+}
+
+blockquote.green--.light {
+    color: white;
+    border-left: solid 3px rgb(44, 189, 1);
+    background: transparent;
+}
+
+.green--.dark {
+    background: rgb(35, 151, 0);
+}
+
+.green--.light {
+    background: rgb(44, 189, 1);
+}
+
+.btn-small.green--.light:hover {
+    background: transparent;
+    border: solid 1px rgb(44, 189, 1);
+    color: rgb(44, 189, 1);
+    font-weight: bold;
+}
+.btn-small.green--.dark:hover {
+    background: transparent;
+    border: solid 1px rgb(35, 151, 0);
+    color: rgb(35, 151, 0);
+    font-weight: bold;
+}
+
+
+/* Blue */
+
+.brand-logo.blue--.light {
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: bold;
+    animation: brand-logo-start-blue 5s alternate;
+    transition: font-size 0.2s;
+}
+
+#help-modal-box blockquote.blue--.light {
+    color: black;
+}
+
+blockquote.blue--.light {
+    color: white;
+    border-left: solid 3px rgb(0, 64, 182);
+    background: transparent;
+}
+
+.blue--.dark {
+    background: rgb(0, 64, 182);
+}
+
+.blue--.light {
+    background: rgb(1, 81, 230);
+}
+
+.btn-small.blue--.light:hover {
+    background: transparent;
+    border: solid 1px rgb(1, 81, 230);
+    color: rgb(1, 81, 230);
+    font-weight: bold;
+}
+.btn-small.blue--.dark:hover {
+    background: transparent;
+    border: solid 1px rgb(0, 64, 182);
+    color: rgb(0, 64, 182);
+    font-weight: bold;
+}

@@ -1,0 +1,1 @@
+cd %userprofile%\Documents && if not exist "nomo" mkdir nomo
