@@ -10,12 +10,12 @@
     "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
   },
   "author": "Edouard Noks M",
-  "license": "GNU",
+  "license": "",
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2"
   },
   "devDependencies": {
-    "electron": "^2.0.7",
+    "electron": "^2.0.8",
     "electron-packager": "^12.1.1"
   }
 }
